@@ -1,0 +1,38 @@
+body {
+    
+        background: #eee;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #666;
+
+    }
+a {
+    color: #139EFF;
+    text-decoration: none;
+}
+            
+h1 {                
+    font-size: 1.5em; 
+    color: #139EFF;    
+}
+
+div.post_info {
+    width: 500px;
+    border-top: 1px SOLID #f3f3f3;
+    border-bottom: 1px SOLID #f3f3f3;
+    background: #fafafa;
+    font-size: 10px;
+    color: #444;
+    padding: 5px;
+
+}
+
+
+div.post_info a {
+
+    font-size: 11px;
+    color: #99DE00;
+    font-weight: bold;
+    text-decoration: none;
+
+}
