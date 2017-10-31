@@ -4,10 +4,22 @@ import './components/news-components/newsContainer.scss';
 
 class App extends Component {
   render() {
-    let noticiasList = [
+    let alumnosList = [
+      {nombre: 'peter'},
+      {nombre: 'mocho'},
+      {nombre: 'ernesto'},
+      {nombre: 'perro'},
+      {nombre: 'ivan'},
+      {nombre: 'facu'},
+      {nombre: 'euge'},
+      {nombre: 'tincho'},
+      {nombre: 'mariasol'},
+  ];
+
+    let newsList = [
       {
         titulo: 'Porque MariaSol no usa un editor como la gente',
-		    contenido: 'Los compas del curso</strong> se preguntan que pasa con el editor que usa esta alumna, el cual no posee ni siquiera color en las fuentes. No es novedad que esta un poco mal de la cabeza pero les parece demasiado que llegue a este tipo de acciones como las de usar un editor solo en gris y negro.',
+		    contenido: 'Los compas del curso se preguntan que pasa con el editor que usa esta alumna, el cual no posee ni siquiera color en las fuentes. No es novedad que esta un poco mal de la cabeza pero les parece demasiado que llegue a este tipo de acciones como las de usar un editor solo en gris y negro.',
 		    fecha: 'Octubre 18, 2017',
 		    creador: 'usuario anonimo',
 		    cantidadComentarios: 0
@@ -27,8 +39,15 @@ class App extends Component {
 		    cantidadComentarios: 300
       }
     ];
+
+    let sarasa = "sarasa";
+    
+    let dataList = [
+      {alumnos: alumnosList},
+      {news: newsList}
+    ];
     return (       
-        <NewsContainer/>        
+        <NewsContainer data = {dataList} />        
     );
   }
 }
