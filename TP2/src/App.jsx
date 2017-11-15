@@ -19,7 +19,7 @@ class App extends Component {
     let newsList = [
       {
         titulo: 'Porque MariaSol no usa un editor como la gente',
-		    contenido: 'Los compas del curso se preguntan que pasa con el editor que usa esta alumna, el cual no posee ni siquiera color en las fuentes. No es novedad que esta un poco mal de la cabeza pero les parece demasiado que llegue a este tipo de acciones como las de usar un editor solo en gris y negro.',
+		    contenido: '<strong>Los compas del curso</strong> se preguntan que pasa con el editor que usa esta alumna, el cual no posee ni siquiera color en las fuentes. No es novedad que esta un poco mal de la cabeza pero les parece demasiado que llegue a este tipo de acciones como las de usar un editor solo en gris y negro.',
 		    fecha: 'Octubre 18, 2017',
 		    creador: 'usuario anonimo',
 		    cantidadComentarios: 0
@@ -40,14 +40,45 @@ class App extends Component {
       }
     ];
 
-    let sarasa = "sarasa";
-    
-    let dataList = [
-      {alumnos: alumnosList},
-      {news: newsList}
+    let menuList = [
+      {
+        titulo: 'Noticias',
+        tituloClass: 'home'
+      },{
+        titulo: 'Infragantti',
+        tituloClass: 'alt'
+      },{
+        titulo: 'Jarriadas',
+        tituloClass: 'alt'
+      },{
+        titulo: 'Cenas de fin de anio',
+        tituloClass: 'alt'      
+      },{
+        titulo: 'Dia del trabajador',
+        tituloClass: 'alt'
+      }
     ];
+    
+    let latestUpdate = [
+      {
+        date: 'Octubre 19, 2017',
+      },
+      {
+        date: 'Octubre 18, 2017',
+      },
+      {
+        date: 'Octubre 17, 2017',
+      }
+    ];
+
+    let headerTitle = 'Sovos Reactivo News';
+
     return (       
-        <NewsContainer data = {dataList} />        
+        <NewsContainer alumnos = {alumnosList} 
+                        news = {newsList} 
+                        menu = {menuList} 
+                        latest = {latestUpdate}  
+                        headerTitle = {headerTitle}/>        
     );
   }
 }
